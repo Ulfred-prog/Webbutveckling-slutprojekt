@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+.models {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.model-card {
+    text-align: center;
+}
+
+.model-card img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.dealer-map {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
