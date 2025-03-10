@@ -29,13 +29,13 @@
         </div>
         <div class="model-card">
             <img src="https://images-porsche.imgix.net/-/media/DA04524ED073403CBC8DA3E50AEF792F_0ADD510F2A8F4A86B510E6F30DFE883F_718-spyder-rs-side?w=1400&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche Spyder">
-            <h2>Porsche Spyder</h2>
+            <h2>Porsche 718</h2>
             <button>Learn More</button>
         </div>
         <div class="model-card">
-            <img src="https://files.porsche.com/filestore/image/multimedia/none/992-c4s-modelimage-sideshot/model/8bb824b6-89d2-11ea-80c6-005056bbdc38/porsche-model.png" alt="Porsche Carrera">
-            <h2>Porsche Carrera</h2>
-            <button>Learn More</button>
+            <img src="https://files.porsche.com/filestore/image/multimedia/none/j1-2nd-taycan-gts-modelimage-sideshot/thumbwhite/e817ce42-969f-11ef-813f-005056bbdc38;sL;twebp/porsche-thumbwhite.webp" alt="Porsche Taycan">
+            <h2>Porsche Taycan</h2>
+            <button>Learn More <link rel="stylesheet" href="911.html"></button>
         </div>
     </section>
 
