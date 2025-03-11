@@ -1,57 +1,151 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #f5f5f5;
+    color: #333;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 40px;
     background: #111;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: #c00;
+}
+
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    background: #333;
+    height: 600px;
+    background: url('https://images-porsche.imgix.net/-/media/C4F4C7D9947640FD81933E51AF72A828_675566B892AB4F168B3614B52D1A3149_001-hero_21-9_desktop_motorsport-and-events_5120x2194?w=1299&q=45&dpr=2&auto=format') no-repeat center/cover;
     color: white;
     text-align: center;
+    padding: 0 20px;
 }
 
+.II{
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url('https://www.bilsport.se/api/images/d33125-d1182170542635659-d58875-d6027131782945736/1980x1320/aae65cd0-4fb3-5a4e-a2d1-bf782f6bbe9a.jpg') no-repeat center/cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    max-width: 800px;
+}
+
+/* Models Section */
 .models {
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
 }
 
 .model-card {
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .model-card img {
     width: 300px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.model-card h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.model-card button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.model-card button:hover {
+    background: #900;
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Dealer Section */
 .dealer-map {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
+    background: #fff;
 }
 
+.dealer-map h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .models {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
 }
