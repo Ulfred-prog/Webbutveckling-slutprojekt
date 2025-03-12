@@ -58,7 +58,17 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 600px;
-    background: url('https://www.bilsport.se/api/images/d33125-d1182170542635659-d58875-d6027131782945736/1980x1320/aae65cd0-4fb3-5a4e-a2d1-bf782f6bbe9a.jpg') no-repeat center/cover;
+    background: url('https://www.bilsport.se/api/images/0-0-1-1/1980x1320/1e3f87b7-4d3a-599b-95a2-5c82990458a6.jpg') no-repeat center/cover;
+}
+.III{
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url('https://i.bstr.es/highmotor/2024/11/Porsche-Taycan-4-Porsche-Taycan-GTS-10.jpg') no-repeat center/cover;
 }
 
 .hero h1 {
