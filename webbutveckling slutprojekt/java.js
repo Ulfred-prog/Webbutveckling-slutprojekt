@@ -1,4 +1,5 @@
 // JavaScript för att hantera knappklick
+// JavaScript för att hantera knappklick
 
 document.addEventListener("DOMContentLoaded", () => {
     // Hämta alla "Learn More"-knappar
@@ -21,4 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-});
+     // Make "Back to home" buttons work
+     const backToHome = document.querySelector("header p");
+     if (backToHome) {
+         backToHome.addEventListener("click", () => {
+             window.location.href = "porsche.html";
+         });
+     }
+ });
+
+
