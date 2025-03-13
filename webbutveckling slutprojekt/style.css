@@ -159,3 +159,19 @@ footer {
         margin: 10px 0;
     }
 }
+
+.text {
+    text-align: center;
+    justify-content: center;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the content and add vertical spacing */
+    line-height: 1.8; /* Improve line spacing for better legibility */
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #222; /* Slightly darker text for contrast */
+    font-size: 1.3rem; /* Balanced font size */
+    padding: 20px; /* Add internal spacing */
+    border-left: 5px solid gray; /* Stylish red accent */
+    background: #fff; /* Clean white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 12px; /* Rounded corners for a modern feel */
+}
