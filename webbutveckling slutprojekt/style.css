@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -8,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -38,49 +36,15 @@ nav a:hover {
     color: #c00;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 600px;
-    background: url('https://images-porsche.imgix.net/-/media/C4F4C7D9947640FD81933E51AF72A828_675566B892AB4F168B3614B52D1A3149_001-hero_21-9_desktop_motorsport-and-events_5120x2194?w=1299&q=45&dpr=2&auto=format') no-repeat center/cover;
+    background: url('') no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 0 20px;
-}
-
-.II{
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    background: url('https://www.bilsport.se/api/images/0-0-1-1/1980x1320/1e3f87b7-4d3a-599b-95a2-5c82990458a6.jpg') no-repeat center/cover;
-}
-.III{
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    background: url('https://static.feber.se/article_images/60/01/93/600193_1920.jpg') no-repeat center/cover;
-
-}
-.IV {
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    background: url('https://images-porsche.imgix.net/-/media/19280935E92747B5838D430742C0AF36_ACF60B398E664128AD35B6C50D6D2AD7_CM21N3BOX0002-1-718-cayman-driving?w=2560&h=1441&q=45&crop=faces%2Centropy%2Cedges&auto=format') no-repeat center/cover;
-
 }
 
 .hero h1 {
@@ -88,7 +52,6 @@ nav a:hover {
     max-width: 800px;
 }
 
-/* Models Section */
 .models {
     display: flex;
     justify-content: space-around;
@@ -99,10 +62,12 @@ nav a:hover {
 .model-card {
     text-align: center;
     transition: transform 0.3s ease;
+    margin: 20px;
+    width: 300px;
 }
 
 .model-card img {
-    width: 300px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -131,7 +96,6 @@ nav a:hover {
     transform: translateY(-10px);
 }
 
-/* Dealer Section */
 .dealer-map {
     padding: 60px 20px;
     text-align: center;
@@ -143,7 +107,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Footer */
 footer {
     background: #111;
     color: white;
@@ -151,39 +114,172 @@ footer {
     padding: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+.text {
+    text-align: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 40px auto;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-left: 5px solid gray;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+table.specs {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table.specs thead {
+    background-color: #222;
+    color: white;
+}
+
+table.specs th,
+table.specs td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.specs tbody tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        height: 500px;
     }
 
     .models {
+        padding: 40px 10px;
+    }
+
+    .model-card {
+        width: 45%;
+    }
+
+    table.specs th, table.specs td {
+        padding: 0.8rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .models {
+        justify-content: center;
+    }
+
+    .model-card {
+        width: 45%;
+        margin: 20px 10px;
+    }
+
+    .dealer-map {
+        padding: 40px 10px;
+    }
+
+    table.specs th, table.specs td {
+        padding: 0.7rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 400px;
     }
 
     .hero h1 {
         font-size: 2rem;
     }
 
-    nav a {
-        margin: 10px 0;
+    .models {
+        padding: 40px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model-card {
+        width: 80%;
+        margin: 15px 0;
+    }
+
+    .dealer-map {
+        padding: 40px 10px;
+    }
+
+    .text {
+        margin: 30px 10px;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    table.specs th, table.specs td {
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 10px;
     }
 }
 
-.text {
-    text-align: center;
-    justify-content: center;
-    max-width: 800px; /* Limit width for better readability */
-    margin: 40px auto; /* Center the content and add vertical spacing */
-    line-height: 1.8; /* Improve line spacing for better legibility */
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #222; /* Slightly darker text for contrast */
-    font-size: 1.3rem; /* Balanced font size */
-    padding: 20px; /* Add internal spacing */
-    border-left: 5px solid gray; /* Stylish red accent */
-    background: #fff; /* Clean white background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 12px; /* Rounded corners for a modern feel */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .model-card {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    table.specs {
+        font-size: 14px;
+    }
+
+    table.specs td::before {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 5px;
+    }
 }
