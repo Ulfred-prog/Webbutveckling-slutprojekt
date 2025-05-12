@@ -16,7 +16,7 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" style="background-image: url(https://images-porsche.imgix.net/-/media/C4F4C7D9947640FD81933E51AF72A828_675566B892AB4F168B3614B52D1A3149_001-hero_21-9_desktop_motorsport-and-events_5120x2194?w=1299&q=45&dpr=2&auto=format);">
         <h1>Explore the Porsche 911, 718, and Taycan</h1>
     </section>
 
@@ -40,7 +40,8 @@
 
     <section id="dealer" class="dealer-map">
         <h2>Find a Dealer Near You</h2>
-        <p>Interactive map coming soon.</p>
+        <img src="porsche.png" alt="karta" width="400" height="300">
+        <p>Find all listed models at: Rinkebyvägen 5, 182 36 Danderyd</p>
         <h1>Contact us:</h1>
         <p>xxxx@XX.com</p>
         <p>07X-XXXX-XXX</p>
