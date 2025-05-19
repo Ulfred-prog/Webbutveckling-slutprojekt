@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche | Luxury Sports Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Porsche</div>
+        <nav>
+            <a href="#models">Models</a>
+            <a href="#dealer">Find a Dealer</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url(https://images-porsche.imgix.net/-/media/C4F4C7D9947640FD81933E51AF72A828_675566B892AB4F168B3614B52D1A3149_001-hero_21-9_desktop_motorsport-and-events_5120x2194?w=1299&q=45&dpr=2&auto=format);">
+        <h1>Explore the Porsche 911, 718, and Taycan</h1>
+    </section>
+
+    <section id="models" class="models">
+        <div class="model-card">
+            <a href="911.html" class="model-link">
+                <img src="https://images-porsche.imgix.net/-/media/9CD53A02737F40A0806BB5EAE1A80F54_D92CC07A446F4B0A8A492A88DD260C0C_911_carrera_gts_sideshot?w=2560&h=760&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche 911">
+                <h2>Porsche 911</h2>
+                <span class="button-text">Learn More</span>
+            </a>
+        </div>
+        <div class="model-card">
+            <a href="718.html" class="model-link">
+                <img src="https://images-porsche.imgix.net/-/media/DA04524ED073403CBC8DA3E50AEF792F_0ADD510F2A8F4A86B510E6F30DFE883F_718-spyder-rs-side?w=1400&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche Spyder">
+                <h2>Porsche 718</h2>
+                <span class="button-text">Learn More</span>
+            </a>
+        </div>
+        <div class="model-card">
+            <a href="taycan.html" class="model-link">
+                <img src="https://images-porsche.imgix.net/-/media/118CC27923D348479FFFA724C52F05F8_DDC0C8C251894632B424B4D2D985AB7E_TA24Q3DIX0010-taycan-turbo-side?w=2560&h=697&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche Taycan">
+                <h2>Porsche Taycan</h2>
+                <span class="button-text">Learn More</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="dealer" class="dealer-map">
+        <h2>Find a Dealer Near You</h2>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <div id="karta"></div>
+
+        <p>Find all listed models at: Rinkebyvägen 5, 182 36 Danderyd</p>
+        <h1>Contact us:</h1>
+        <p>xxxx@XX.com</p>
+        <p>07X-XXXX-XXX</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Porsche. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script src="java.js"></script>
+<script src="map.js"></script>
+</html>
