@@ -77,19 +77,48 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
-.model-card button {
+.model-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 8px;
     padding: 10px 20px;
     font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.model-link:hover {
+    background: #900;
+}
+
+.model-link img {
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: block;
+}
+
+.model-link h2, .model-link h3 {
+    margin: 20px 0 10px 0;
+}
+
+.button-text {
+    display: inline-block;
     background: black;
     color: white;
-    border: none;
+    padding: 10px 20px;
     border-radius: 8px;
-    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
     transition: background 0.3s ease;
 }
 
-.model-card button:hover {
-    background: #900;
+.model-link:hover .button-text {
+    background: rgb(235, 21, 21);
 }
 
 .model-card:hover {
@@ -281,5 +310,24 @@ table.specs tbody tr:nth-child(even) {
 
     footer {
         padding: 5px;
+    }
+}
+
+#karta {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    #karta {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #karta {
+        height: 200px;
     }
 }
